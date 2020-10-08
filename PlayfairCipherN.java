@@ -51,7 +51,7 @@ void makeArray(String keyword){
             }
             if (!present){
                 uniqueChar[val]=keyword.charAt(i);
-                val++;
+                val = val+1;
             }
         }
         ch=ch.replaceAll(Character.toString(keyword.charAt(i)), "");

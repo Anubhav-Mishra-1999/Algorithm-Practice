@@ -17,7 +17,7 @@ public class Main {
             {
              cc = (char) (cc + key);
               if(cc > 'z') { 
-                cc = (char) (cc+'a'-'z'-1);
+                cc = (char) (cc+'a'-'z'-1); //typecasted to character
              }
              ciphertext = ciphertext +cc;
             }

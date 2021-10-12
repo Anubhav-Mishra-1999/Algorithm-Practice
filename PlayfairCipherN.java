@@ -112,7 +112,8 @@ void searchAndEncryptOrDecrypt(String doubblyCh, String tag){
             if (alphabets[i][j]==ch1){
                 row1=i;
                 col1=j;
-            }else if (alphabets[i][j]==ch2){
+            }
+            else if(alphabets[i][j]==ch2){
                 row2=i;
                 col2=j;
             }

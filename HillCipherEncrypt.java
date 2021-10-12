@@ -16,7 +16,7 @@ public class Main {
 		for (i = 0; i < str.length(); i++) {
 			int c1 = str.charAt(i);
 
-			p[i] = (c1) - 97;
+			p[i] = c1 - 97;
 		}
 		i = 0;
 		int zz = 0;

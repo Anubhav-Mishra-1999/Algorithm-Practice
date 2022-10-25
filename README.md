@@ -1,2 +1,2 @@
 # Algorithm-Practice
-Practicing algorithms
+Practicing Encryption algorithms

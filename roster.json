@@ -2,11 +2,11 @@
   {"type":"header","version":"4.9.5","comment":"Export to JSON plugin for PHPMyAdmin"},
   {"type":"database","name":"roster"},
   {"type":"table","name":"course","database":"roster","data":
-  [
-  {"course_id":"106","title":"si106"},
-  {"course_id":"110","title":"si110"},
-  {"course_id":"206","title":"si206"}
-  ]
+    [
+      {"course_id":"106","title":"si106"},
+      {"course_id":"110","title":"si110"},
+      {"course_id":"206","title":"si206"}
+    ]
   }
   ,{"type":"table","name":"member","database":"roster","data":
   [

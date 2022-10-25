@@ -11,17 +11,15 @@ public class Main {
         }
         for(int i=0; i < plaintext.length();i++) 
         {
-            cc = plaintext.charAt(i);
-             
+            cc = plaintext.charAt(i);  
             if(cc >= 'a' && cc <= 'z') 
             {
              cc = (char) (cc + key);
               if(cc > 'z') { 
                 cc = (char) (cc+'a'-'z'-1); //typecasted to character
-             }
-             ciphertext = ciphertext +cc;
+              }
+             ciphertext = ciphertext + cc;
             }
-            
             else if(cc >= 'A' && cc <= 'Z') {
              cc = (char) (cc + key);   
              if(cc > 'Z') {
@@ -34,6 +32,6 @@ public class Main {
             }
         
     }
-    System.out.println(" ciphertext : " + ciphertext);
+    System.out.println(" cipher text : " + ciphertext);
   }
 }

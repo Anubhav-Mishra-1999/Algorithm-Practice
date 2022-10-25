@@ -2,7 +2,6 @@ import java.util.Scanner;
 public class Main {
 public static void main(String[] args) {
     Scanner in=new Scanner(System.in);
-
     System.out.print("Enter keyword: ");
     String key=in.nextLine();
     System.out.print("Enter message to encrypt: ");
@@ -18,7 +17,7 @@ public static void main(String[] args) {
     System.out.println();
     pfEncryption.doPlayFair(en, "Decrypt");
     System.out.print("decrypted text is: " + pfEncryption.getDecrypted());
-}
+  }
 }
 
 class PFEncryption{
@@ -57,20 +56,21 @@ void makeArray(String keyword){
         ch=ch.replaceAll(Character.toString(keyword.charAt(i)), "");
     }
 
-    for (int i=0; i<ch.length(); i++){
-        uniqueChar[val]=ch.charAt(i);
-        val++;
-    }
-    val=0;
-
-    for (int i=0; i<5; i++){
-        for (int j=0; j<5; j++){
-            alphabets[i][j]=uniqueChar[val];
+        for (int i=0; i<ch.length(); i++){
+            uniqueChar[val]=ch.charAt(i);
             val++;
-            System.out.print(alphabets[i][j] + "\t");
         }
-        System.out.println();
-    }
+    
+        val=0;
+
+        for (int i=0; i<5; i++){
+            for (int j=0; j<5; j++){
+                alphabets[i][j]=uniqueChar[val];
+                val++;
+                System.out.print(alphabets[i][j] + "\t");
+            }
+            System.out.println();
+        }
     }
 
     String manageMessage(String msg){
@@ -175,7 +175,4 @@ String getEncrypted(){
 String getDecrypted(){
     return decrypted;
 }
-
-
-
 }
